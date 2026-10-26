@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MONKEYKING ARCHIVES</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#09070f;color:#f5efff;font-family:Arial,sans-serif;line-height:1.6}
+header{padding:18px 7%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px;background:#0d0914;border-bottom:1px solid #30203f}
+.logo{font-weight:900;letter-spacing:2px}
+.logo span,h1 span{color:#b35cff}
+nav{display:flex;gap:15px;flex-wrap:wrap}
+nav a{color:#b7a8c7;text-decoration:none;font-size:14px}
+nav a:hover{color:#f472b6}
+.hero{min-height:78vh;padding:85px 7%;display:flex;flex-direction:column;justify-content:center;background:radial-gradient(ellipse at 75% 20%,#51208066,transparent 45%),radial-gradient(ellipse at 15% 85%,#a855f722,transparent 40%)}
+.tag{color:#f472b6;letter-spacing:3px;font-size:12px;font-weight:bold}
+h1{font-size:clamp(43px,10vw,94px);line-height:.98;margin:20px 0;letter-spacing:-3px}
+.hero p{max-width:600px;color:#b7a8c7}
+.button{display:inline-block;padding:12px 19px;margin:8px 8px 8px 0;background:#9333ea;color:white;border:0;border-radius:8px;text-decoration:none;font-weight:bold;cursor:pointer}
+.button:hover{background:#a855f7}
+section{padding:65px 7%}
+.label{color:#f472b6;letter-spacing:3px;font-size:12px}
+h2{font-size:clamp(28px,5vw,44px);margin:8px 0 25px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:16px}
+.card{padding:22px;background:#15101f;border:1px solid #30203f;border-radius:14px;transition:.2s}
+.card:hover{transform:translateY(-4px);border-color:#a855f7}
+.card h3{margin:8px 0;font-size:21px}
+.card p{color:#b7a8c7;font-size:14px}
+.number{font-size:12px;color:#b35cff;letter-spacing:2px}
+.quote{margin-top:20px;padding:25px;background:#1b1027;border-left:4px solid #f472b6;border-radius:8px;font-size:19px}
+.dota{background:linear-gradient(135deg,#171020,#0d0a13)}
+.stat{font-size:32px;color:#f472b6;font-weight:900}
+.small{font-size:12px;color:#9d8eac}
+#secret{display:none}
+footer{padding:30px 7%;border-top:1px solid #30203f;color:#9d8eac;font-size:12px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">MONKEYKING<span> / ARCHIVES</span></div>
+  <nav>
+    <a href="#saga">Сага</a>
+    <a href="#characters">Персонажи</a>
+    <a href="#dota">Dota 2</a>
+    <a href="#lore">Секреты</a>
+  </nav>
+</header>
+
+<main>
+<div class="hero">
+  <div class="tag">CLASSIFIED FILE №001 · SECRET ARCHIVE</div>
+  <h1>THE<br><span>MONKEYKING</span><br>ERA.</h1>
+  <p>Архив легенд, мемов, романтических сюжетных поворотов и бесконечных каток в Dota 2. Здесь каждый день может стать началом новой главы.</p>
+  <div>
+    <a class="button" href="#saga">Открыть досье ↓</a>
+    <a class="button" href="#characters">Персонажи</a>
+  </div>
+  <p class="small">STATUS: THE LEGEND CONTINUES</p>
+</div>
+
+<section id="saga">
+  <div class="label">CHAPTER 01 / THE STORY</div>
+  <h2>Сага Дианы</h2>
+  <div class="card">
+    <div class="number">ARC 001 — ROMANCE</div>
+    <h3>Главный сюжетный поворот</h3>
+    <p>В каждой легенде есть история, которую пересказывают снова и снова. Неожиданные встречи, сложные решения, недопонимания и мемы, пережившие первоначальный сюжет.</p>
+    <p>Диана — центральная фигура этой сюжетной арки. Но ни один сезон не обходится без персонажей, способных перевернуть всё с ног на голову.</p>
+  </div>
+  <div class="quote" id="quote">«Настоящий лор начинается там, где заканчивается логика».</div>
+  <button class="button" onclick="newQuote()">Получить пророчество</button>
+</section>
+
+<section id="characters">
+  <div class="label">CHAPTER 02 / THE CAST</div>
+  <h2>Персонажи лора</h2>
+  <p class="small">Шуточные роли внутри мемной вселенной.</p>
+  <div class="grid">
+    <div class="card">
+      <div class="number">01 / MAIN CHARACTER</div>
+      <h3>Илья Монкикингов</h3>
+      <p>Главный герой. Может исчезнуть из чата, но никогда — из лора.</p>
+    </div>
+    <div class="card">
+      <div class="number">02 / ROMANCE ARC</div>
+      <h3>Диана</h3>
+      <p>Центральная фигура сюжетной линии. Одно появление — и начинается новый сезон.</p>
+    </div>
+    <div class="card">
+      <div class="number">03 / MATCHMAKER</div>
+      <h3>Яна Хомячкова</h3>
+      <p>Связующее звено между сюжетными линиями. Когда она появляется, лор становится сложнее.</p>
+    </div>
+    <div class="card">
+      <div class="number">04 / WILDCARD</div>
+      <h3>Саня</h3>
+      <p>Непредсказуемый участник истории. Появляется именно тогда, когда его не ждут.</p>
+    </div>
+    <div class="card">
+      <div class="number">05 / THE BOSS</div>
+      <h3>Глеб Крамнишев</h3>
+      <p>Администратор хаоса. Следит, чтобы мемы никогда не заканчивались.</p>
+    </div>
+    <div class="card">
+      <div class="number">06 / THE COMMUNITY</div>
+      <h3>Комьюнити</h3>
+      <p>Хранители легенд, свидетели сюжетных поворотов и авторы новых мемов.</p>
+    </div>
+  </div>
+</section>
+
+<section class="dota" id="dota">
+  <div class="label">CHAPTER 03 / DOTA 2</div>
+  <h2>Отдельный круг ада</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="stat">-25</div>
+      <h3>Потеря рейтинга</h3>
+      <p>Одна катка — и вера в человечество снова проходит испытание.</p>
+    </div>
+    <div class="card">
+      <div class="stat">0/10</div>
+      <h3>План на вечер</h3>
+      <p>«Сыграем одну». Самая известная неправда игровой индустрии.</p>
+    </div>
+    <div class="card">
+      <div class="stat">GG</div>
+      <h3>Финал</h3>
+      <p>Матч завершён. Анализ ошибок перенесён на следующий матч.</p>
+    </div>
+  </div>
+  <div class="quote">«Мы не проиграли. Мы просто изучили ещё один способ проиграть».</div>
+</section>
+
+<section id="lore">
+  <div class="label">CHAPTER 04 / CLASSIFIED</div>
+  <h2>Секретный архив</h2>
+  <p>Думаешь, знаешь всю историю? Архив хранит ещё одну страницу.</p>
+  <button class="button" onclick="revealSecret()">Открыть секретный файл</button>
+  <div id="secret" class="quote">
+    Файл открыт. Главный сюжетный поворот: все ждали финала, но авторы продлили сериал ещё на один сезон.
+    <p class="small">ARCHIVE STATUS: TO BE CONTINUED...</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <strong>MONKEYKING ARCHIVES</strong><br><br>
+  Пародийный фан-сайт и мемная вселенная. Описания персонажей — шуточные роли, а не подтверждённые факты о реальных людях. Не публикуйте личные переписки, адреса и частную информацию.<br><br>
+  © 2026 · LORE NEVER DIES
+</footer>
+
+<script>
+const quotes = [
+  "«Настоящий лор начинается там, где заканчивается логика».",
+  "«Если это нельзя объяснить — значит, это новый сюжетный поворот».",
+  "«Одна катка. Один шанс. Ещё минус двадцать пять».",
+  "«История закончилась? Нет, просто вышел новый персонаж».",
+  "«Главный босс — это собственные решения».",
+  "«Легенды меняются. Мемы остаются»."
+];
+
+function newQuote() {
+  const el = document.getElementById("quote");
+  let next = quotes[Math.floor(Math.random() * quotes.length)];
+  if (quotes.length > 1 && next === el.textContent) {
+    next = quotes[(quotes.indexOf(next) + 1) % quotes.length];
+  }
+  el.textContent = next;
+}
+
+function revealSecret() {
+  const el = document.getElementById("secret");
+  el.style.display = el.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
